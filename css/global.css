@@ -1,0 +1,19 @@
+:root{
+    --ciano: #00dda8;
+    --branco: #ffffff;
+    --preto: #000000;
+    --background: #e8e8e8;
+    --header-background: #00dda8;
+    --title-color: #00081b;
+
+    --default-font: 'Arial', sans-serif;
+    --title-font: 'MedievalSharp', cursive;
+    --default-size-font: 1rem;
+    --title-font-size: 2.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

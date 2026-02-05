@@ -1,0 +1,23 @@
+.header-container {
+    background-color: var(--header-background);
+    height: 100px;
+    width: 100%;
+    font-size: var(--default-font-size);
+    font-family: var(--default-font);
+    color: var(--branco);
+}
+
+.header-container h1{
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    text-align: center;
+}
+/*codigo pelo gemini
+.header-principal h1 
+    font-family: var(--fonte-rpg); Aplica a MedievalSharp 
+    color: var(--cor-titulo);       Aplica a cor que você definiu 
+    font-size: 3rem;                Deixa o título bem grande e épico 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  Dica: adiciona uma sombra para dar profundidade 
+}
+*/
