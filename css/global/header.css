@@ -40,35 +40,64 @@
 }
 
 .logo-image{
-    padding-left: 20px;
-    width: 60px;
-    height: auto;
+    padding-left: 20px; /* afasta a imagem da "parede"*/
+    width: 60px; /* tamanho da imagem*/
+    height: auto;/* define um altura altomatrica para não distorcer a imagem*/
 }
 
 
-.menu-mobile{
-    display: inline-block;
+.menu-mobile{/*configuração do botão*/
+    display: inline-block;/* alinha o botão fazendo ele ficar em uma linha especifica*/
     background-color: transparent;
     color: var(--btn-font-color);
     border: 1px solid var(--btn-font-color);
-    padding: 5px 10px;
+    padding: 5px 10px; /*define o formato retangular do botão o primeiro altura e segunda o a
+    largura se tivesse 4 informações ele ia definir por no sentido horario*/
     font-size: 1.2rem;
-    cursor: pointer;
+    cursor: pointer; /* Transforma a seta do mouse na 'mãozinha' de clique */
 }
 
-.links-list{
-    display: none;
-    list-style: none;
-    padding: 0;
+.links-list{ 
+    display: none; /*faz os links para as ouras paginas não aparecer*/
+    list-style: none; /*normalmente uma lista tem ontinhos ou uma numeração no caso com essa linha
+    ele não tem isso.*/
+    padding: 0; /*desfine os espaçamentos dos links como 0*/
 
 }
-.links-list a{
+
+#navLinks.active{
+    display: flex !important;
+    flex-direction: column;
+    background-color: var(--header-background);
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0,1); 
+    animation: fadeIn 0.3s ease-in-out; 
+}
+
+@keyframes fadeIn{
+    from{opacity: 0; text-replace: translateY(-10px);}
+    to{opacity: 1; transform: translate(0);}
+}
+
+#navLinks li{
+    display: block !important;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.links-list a{ /*as informações dos textos dos links*/
     color: var(--links-font-color);
-    text-decoration: none;
+    text-decoration: none; /*por padrão os links são sublinhados com essa linha isso não acontece*/
     font-family: var(--title-font);
-    transition: 0.3s;
+    transition: 0.3s; /*define o tempo que dura a tranzição da cor base para a cor que fica 
+    ao passa o cursor do mouse por cima*/
 }
-.links-list a:hover{
+.links-list a:hover{ /*define a cor que fica ao passar o cursor por cima*/
     color: var(--title-color);
 
 }
@@ -83,26 +112,27 @@
     
 }
 
-.navegation{
-    width: 100%;
-    align-self: flex-start;
+.navegation{ /* sobre a parte dos links de navegação do site no desktop*/
+    width: 100%; /*que o objeto tem que ocupar todo o espaço disponivel na caixa que ele esta contido*/
+    align-self: flex-start;/*difine a direção de um bloco especifico*/
     background-color: var(--header-background);
-    text-align: left;
-    padding: 0;
-    margin-top: 10px;
+    text-align: left;/*alinha o texto a esquerda*/
+    padding: 0;/*remove o espaço em volta do texto*/
+    margin-top: -10px;/*cria uma margem em cima, nocaso o negativo tira essa margem*/
 }
 
 
 .menu-mobile{
-    display: none;
+    display: none;/*desativa o botão no desctop*/
 }
 
 .links-list{
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-top: 5px;
-    padding-left: 20px;
+    display: flex; /*deixa os itens dessa "caixa" mais sucetivesi a comandos de posicionamento
+    polpando varios calculos*/
+    justify-content: flex-start; /*empurra os itens da lista para o começõ da caixa*/
+    gap: 20px;/*define um espaço entre os itens de uma caixa flexivel*/
+    margin-top: 5px; /*cria uma margem no topo*/
+    padding-left: 20px; /*cria um espaço na esquerda separando so itens da parede da pagina*/
 }
 
 }
