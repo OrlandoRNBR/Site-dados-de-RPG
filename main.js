@@ -1,11 +1,10 @@
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded',() => { 
 
     const btnMobile = document.getElementById('btnMobile');
     const nav = document.getElementById('navLinks');
 
 
 function toggleMenu (){
-console.log("O botão foi clicado!");
 nav.classList.toggle('active');
 }
 

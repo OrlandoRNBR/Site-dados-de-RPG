@@ -31,7 +31,7 @@
     font-size: var(--title-font-size);
     font-family: var(--title-font);
     flex: 1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/*assim como em cima aqui faz uma sombra para
+    /*assim como em cima aqui faz uma sombra para
     o titulo o primero numero de dois 2px define a esca horizontal -2 seria para a esquerda
     o segundo a escala vertical -2px seria para baixo e o ultimo deixa ele mais borrado.
     000 é a cor preta e 0.5 significa 50% de opacidade.*/

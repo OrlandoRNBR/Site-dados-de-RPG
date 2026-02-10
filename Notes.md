@@ -152,3 +152,6 @@ Lógica: +10
 CSS: +15
 
 Paciência com Bugs: Nível Lendário 🏆
+
+dia 10/02/2026
+basicamente coloquei um footer e coloquei um titulo nele.
