@@ -155,3 +155,6 @@ Paciência com Bugs: Nível Lendário 🏆
 
 dia 10/02/2026
 basicamente coloquei um footer e coloquei um titulo nele.
+
+dia 11/02/2026
+terminei o footer fiz mais um acima do primeiro só para as minhas redes sociais e depois adicionei os links e as informações do footer.
