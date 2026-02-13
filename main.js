@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',() => { 
+document.addEventListener('DOMContentLoaded',() => { s
 
     const btnMobile = document.getElementById('btnMobile');
     const nav = document.getElementById('navLinks');

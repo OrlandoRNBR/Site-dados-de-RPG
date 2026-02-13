@@ -2,12 +2,14 @@
 
 .header-container {/*aqui temos uma classe que exite no html e ela guarda as informações de
     formatação desse bloco no caso do header*/
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 10px;
-    gap: 10px;
+    justify-content: space-between; /*coloca o primeiro item no topo e o ultimo na parte de baixo e
+    divide o espaço entre eles igualmente*/
+    display: flex; /*deixa a caixa manipulavel*/
+    flex-wrap: wrap; /*faz os elementos não ficarem na mesma linha*/
+    align-items: center; /*alinha os itens ao sentro*/
+    padding: 0 10px; /*define uma margem ou borda o primeiro valor é bertical e o segundo é
+    orizontal*/
+    gap: 10px; /*cria um espaço entre os elementos da caixa*/
     background-color: var(--header-background);/*cor de fundo do header, como pode ver o var pega
     uma variavel do outro arquivo*/
     height: 100px; /*autura do header*/
@@ -66,27 +68,30 @@
 }
 
 #navLinks.active{
-    display: flex !important;
-    flex-direction: column;
+    display: flex !important;/*deixa a caixa mais "maleavel" pemitindo um item ao lado do outro ou
+    outros alinhamentos*/
+    flex-direction: column; /*alinha todos os itens do flex em coluna*/
     background-color: var(--header-background);
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 1000;
-    padding: 20px;
-    border-top: 1px solid rgba(255,255,255,0,1); 
-    animation: fadeIn 0.3s ease-in-out; 
+    width: 100%; /*tamanho, faz ocupar tudo da borda da direita até a esquerda*/
+    position: absolute; /*faz esse elemento flutuar sobre os outros*/
+    top: 100px;/*define a altura desse elemento*/
+    left: 0; /*cola na esquerda*/
+    z-index: 1000; /*coloca esse elemneto sobre os outros*/
+    padding: 20px; /*define os espaçamento entre os elemntos*/
+    border-top: 1px solid rgba(255,255,255,0,1); /*aplica uma borda no topo da caixa*/
+    animation: fadeIn 0.3s ease-in-out; /*adiciona a animação de devanecer do menu mobile*/
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn{ /*configuração da animação de devanecer do menu mobile*/
     from{opacity: 0; text-replace: translateY(-10px);}
     to{opacity: 1; transform: translate(0);}
 }
 
-#navLinks li{
-    display: block !important;
-    text-align: center;
+#navLinks li{/*# usa o id no lugar da classe e da prioridade na hora de definir os dados.*/
+    display: block !important; /*!important faz o css ver esse comomado como prioeidade e
+    o display block faz esse elemento ocupar toda a area na qual ele está dentro fazendo
+    alguns elementos irem para outra linha*/
+    text-align: center; 
     margin: 10px 0;
 }
 
