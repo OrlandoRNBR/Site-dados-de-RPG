@@ -1,7 +1,7 @@
 
 
 .footerLinks {
-display: flex; /*deixa a caixa desse elemento mais manipulavel*/
+    display: flex; /*deixa a caixa desse elemento mais manipulavel*/
     gap: 10px; /*define um espaço entre os elementos*/
     justify-content: center; /*centraliza horizontalmente os itens*/
     padding: 0; /*define 0 espaços entre os itens*/
@@ -10,6 +10,7 @@ display: flex; /*deixa a caixa desse elemento mais manipulavel*/
     list-style: none; /*tira os pontos da lista*/
     background-color: var(--footer-redes); 
     font-family: var(--defoult-font);
+    font-size: var(--footer-links-mobile-font-size);
     align-items: center; /*alinha o item ao sentro*/
     text-align: center; /*alinha os testos ao centro*/
     margin: 0;/*tira as nargens*/
@@ -24,7 +25,7 @@ display: flex; /*deixa a caixa desse elemento mais manipulavel*/
 .redesLogo{
     height: auto; /*define uma altura altomatica*/
     width: 20px; /*define a largura da imagem como 20 px*/
-    margin-right: 10px;/*cria uma margem de 10px a direita*/
+    margin-right: 0;/*cria uma margem de 10px a direita*/
 }
 
 .footerNav a{ 
@@ -38,6 +39,7 @@ gap: 10px;
     color: var(--footer-font-color);
     transition: 0.3s;
 }
+
 
 .footer-container{
     display: flex;

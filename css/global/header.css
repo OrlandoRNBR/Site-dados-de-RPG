@@ -30,7 +30,7 @@
 */
 .header-container h1{ /*aqui é a mesma coisa mas só se aplica aos titulos h1*/
     color: var(--title-color);
-    font-size: var(--title-font-size);
+    font-size: var(--title-font-size-mobile);
     font-family: var(--title-font);
     flex: 1;
     /*assim como em cima aqui faz uma sombra para
@@ -114,7 +114,7 @@
     text-align: left;
     padding-left: 10px; /*alinha o texto a esquerda*/
     padding-top: 10px;
-    
+    font-size: var(--title-font-size);
 }
 
 .navegation{ /* sobre a parte dos links de navegação do site no desktop*/

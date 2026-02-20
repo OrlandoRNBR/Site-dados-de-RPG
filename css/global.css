@@ -2,7 +2,6 @@
 /* esse arquivo vai manter informações, cores e formatações pada do projeto.*/
 :root{ /*root mostra para o html qual é o padão para o projeto na pratica
     ele guarda variaveis globais*/
-    --ciano: #00dda8;
     --branco: #ffffff;
     --preto: #000000;
     --background: #e8e8e8;
@@ -13,13 +12,16 @@
     --footer-background: #001036;
     --footer-font-color: #ff0000;
     --footer-redes: #00081b;
-
+    --default-font-color: #07000f;
+    --default-background-color: #faf1df;
 
     --btn-defoult-font: 'Arial', sans-serif; /*fonte dos botoes*/
     --default-font: 'Arial', sans-serif;/* fonte padrão para o site*/
     --title-font: 'MedievalSharp', cursive; /*fonte para os titulos*/
     --default-size-font: 1rem; /*tamanho da fonte padrão*/
     --title-font-size: 2.5rem;/*tamanho da fonte para titulos*/
+    --title-font-size-mobile: 2.0rem;
+    --footer-links-mobile-font-size:0.6rem;
     /*rem é uma medida de tamanho flexivel que na pratica vale 16 pixels mas se ajusta a pagina
     por exemplo se o usuario der um zoom de 2x ele passa a valer 32 para se ajustar a tela.*/
 }
