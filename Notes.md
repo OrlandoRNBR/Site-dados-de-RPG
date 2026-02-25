@@ -196,3 +196,6 @@ Usamos um gradiente radial para simular as bordas levemente queimadas.
 Adicionamos uma sombra interna (inset) para dar profundidade ao conteúdo central.
 
 Nota do Narrador: Você agora tem uma base sólida. O header funciona, o footer está alinhado e o conteúdo central (main) tem a cara de uma aventura épica.
+
+dia 25/02/2026
+Terminei o primeiro topico na home e documentei o css do meu footer coisa simples.

@@ -1,35 +1,36 @@
 .mainContent{ 
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; /*Define que a largura da caixa ocupa 100% da tela da direita até a esqueda*/
+    box-sizing: border-box; /* faz com que o conteudo permanessa dentro da caixa*/
     font-family: var(--default-font);
     color: var(--default-font-color);
     /*background-color: var(--default-background-color);*/
-    background: radial-gradient(circle, #fdf5e6 30%, #f2e8c9 100%);
-    box-shadow: inset 0 0 60px rgba (0, 0, 0, 0.1);
-    border: 1px solid #d3b48c;
+    background: radial-gradient(circle, #fdf5e6 30%, #f2e8c9 100%); /*Cira um gradiente em formato de circulo ficando mais 
+    claro de dentro para fora*/
+    box-shadow: inset 0 0 60px rgba (0, 0, 0, 0.1); /*Define uma sombra interna em toda a caixa*/
+    border: 2px solid #d3b48c; /*cria uma linha em volta da caixa*/
 }
 
 .mainContent h1{
-    padding: 30px 30px;
+    padding: 30px 30px; /*cria uma margem de 30px na horizontal (esquerda e direita) e na vertical(cima e baixo)*/
     font-family: var(--title-font);
     font-size: var(--title-font-size);
 }
 
 .mainContent p{
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 30px 30px; /*cria uma margem do taamanho sendo o 0 a parte de cima e o resto segue girando em sentido horario */
     font-size: var(--default-size-font);
     
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px){/*aplica essas coisas só no pc*/
 .mainContent h1{
-    padding: 30px 30px;
+    padding: 30px 30px; 
     font-family: var(--title-font);
     font-size: var(--title-font-size-mobile);
 }
 
 .mainContent p{
-    padding: 0 100px 30px 30px;
+    padding: 0 300px 30px 30px; /*300 px é uma margem no lado esquerdo*/
     font-size: var(--default-size-font);
 }
 
