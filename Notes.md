@@ -199,3 +199,5 @@ Nota do Narrador: Você agora tem uma base sólida. O header funciona, o footer 
 
 dia 25/02/2026
 Terminei o primeiro topico na home e documentei o css do meu footer coisa simples.
+dia 28/02/2026
+Adicionei mais um topico ao texto da pagina home e criei a pagina dices para começar a avançar nesse projeto e ir para uma ferramenta funcional basicamente copiei o index, mudei o nome e apaguei o main. e criei o dices.js para começar o script desse sistema. Mas por hoje vai ser só isso.
