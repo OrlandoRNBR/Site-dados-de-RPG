@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollRPGS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>                                        
+<body>
+    <header class="header-container">
+        <li><a href="index.html"><img src="images/dice-8713848_1280.png" alt="Logo tipo roxa que representa um dade de vinte lados" class="logo-image"></a></li>
+        <h1>Roll RPGs</h1>
+        <nav id="nav-links" class="navegation">
+            <button  id="btnMobile" class="menu-mobile">
+                ☰
+            </button>
+            <ul id="navLinks" class="links-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="simpledices.html">Simple dices</a></li>
+                <li><a href="name-generator.html">Names genarator</a></li>
+            </ul>
+        </nav>
+    </header>
+<main style="min-height: 80vh;" class="mainContent" id="mainID">
+    <h1>Simple Dice</h1>
+    <p>
+        Insira a quantidade, o modificador e role!
+    </p>
+
+    <form action="" id="diceForm" class="diceConteiner">
+
+        <div class="diceRow">
+            <label for="qtyD20">D20:</label>
+            <input type="number" id="qtyD20" placeholder="1d" min="0">
+            <input type="number" id="modD20" placeholder="+mod">
+            <button type="button" onclick="rolarIndividual(20)">Rolar d20</button>
+        </div>
+
+        <div class="diceRow">
+            <label for="qtyD12">D12:</label>
+            <input type="number" id="qtyD12" placeholder="1d" min="0">
+            <input type="number" id="modD12" placeholder="+mod">
+            <button type="button" onclick="rolarIndividual(12)">Rolar d12</button>
+        </div>
+        
+        <div class="diceRow">
+            <label for="qtyD10">D10:</label>
+            <input type="number" id="qtyD10" placeholder="1d" min="0">
+            <input type="number" id="modD10" placeholder="+mod">
+            <button type="button" onclick="rolarIndividual(10)">Rolar d10</button>
+        </div>
+
+        <div class="diceRow">
+            <label for="qtyD8">D8: </label>
+            <input type="number" id="qtyD8" placeholder="1d" min="0">
+            <input type="number" id="modD8" placeholder="+mod">
+            <button type="button" onclick="rolarIndividual(8)">Rolar d8</button> 
+        </div>
+
+        <div class="diceRow">
+            <label for="qtyD6">D6:</label>
+            <input type="number" id="qtyD6" placeholder="1d" min="0">
+            <input type="number" id="modD6" placeholder="+mod">
+            <button type="button" onclick="rolarIndividual(6)">Rolar d6</button>
+        </div>
+        
+        <div class="diceRow">
+            <label for="qtyD4">D4:</label>
+            <input type="number" id="qtyD4" placeholder="1d" min="0">
+            <input type="number" id="modD4" placeholder="+mod">
+            <Button type="button" onclick="rolarIndividual(4)">Rolar d4</Button>
+        </div>
+
+        <div class="diceRow">
+            <label for="qtyD100">D100:</label>
+            <input type="number" id="qtyD100" placeholder="1d" min="0">
+            <input type="number" id="modD100" placeholder="+mod">
+            <button type="button" onclick="rolarIndividual(100)">Rolar d100</button>
+        </div>
+
+        <hr> <div class="actions">
+            <button type="button" id="btnRollAll"> Roll All</button>
+            <button type="reset">Limpar Tudo</button>
+        </div>
+
+    </form>
+    <section id="resultArea" class="resultDisplay"> 
+        <h2>Resultados</h2>
+        <div id="output">O resultado aparecera aqui...</div>
+    </section>
+    
+    <p>Roll All em em desenvolvimento!</p>
+
+</main>
+    <footer id="redesFooter" class="footerRedes">
+        <nav id="navFooter" class="footerNav">
+            <ul id="ContactsLinks" class="footerLinks">
+
+        <img src="images/instagram.png" alt="Logo do instagra com cor preta, imagem de uma camera" class="redesLogo">
+        <li>
+            <a href="https://www.instagram.com/orlandornbr">
+                @orlandornbr
+            </a>
+        </li>
+
+        <img src="images/instagram.png" alt="Logo do instagra com cor preta, imagem de uma camera" class="redesLogo">
+        <li>
+            <a href="https://www.instagram.com/orlando.r_neto">
+                @orlando_r.neto
+            </a>
+        </li>
+
+        <img src="images/github.png" alt="Logo do github com cor preta um fundo preto com a silhueta de um gato" class="redesLogo">
+        <li>
+            <a href="https://github.com/OrlandoRNBR">
+                OrlandoRNBR
+            </a>
+        </li>
+
+        </ul>
+        </nav>
+    </footer>
+    <footer id="footerId" class="footer-container">
+        <h1>RollRPGs</h1>
+        <p>
+            © 2026 | OrlandoRNBR 2026
+        </p>
+          <p> 
+            contato:orlandoramosneto@gmail.com
+        </p>
+        
+        
+   
+    </footer>
+<script src="main.js"></script>
+<script src="scripts/dices.js"></script>
+</body>
+</html>

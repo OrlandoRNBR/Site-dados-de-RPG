@@ -201,3 +201,6 @@ dia 25/02/2026
 Terminei o primeiro topico na home e documentei o css do meu footer coisa simples.
 dia 28/02/2026
 Adicionei mais um topico ao texto da pagina home e criei a pagina dices para começar a avançar nesse projeto e ir para uma ferramenta funcional basicamente copiei o index, mudei o nome e apaguei o main. e criei o dices.js para começar o script desse sistema. Mas por hoje vai ser só isso.
+
+03/03/2026
+Criei toda a logica da rolagem de dados e a função de rolar tipos diferentes de dados individualmente agora falta criar a forma de rolar todos os dados configurados. Ainda falta documentar os codigos tambem.
