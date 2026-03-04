@@ -27,17 +27,30 @@ function rolarIndividual(faces){
         somaDices += valorSoerteado;
     }
     
+   
+
     const totalComMod = somaDices + mod;
     const maior = Math.max(...dice);
     const menor = Math.min(...dice);
     const maiorComMod = maior + mod; 
 
-    let mensagem = `
-    <strong>Dados rolados:</strong> ${dice.join(", ")} <br>
-    <strong>Total com Modificador:</strong> ${totalComMod} <br>
-    <strong>Maior com Modificador:</strong> ${maiorComMod} <br>
-    <strong>Maior valor:</strong> ${maior} | <strong>Menor:</strong> ${menor}
-`;
+    const advancedMode = document.getElementById('confResults1').checked; 
+
+    let mensagem;
+
+    if(advancedMode){
+        mensagem = `
+            <strong>Dados rolados:</strong> ${dice.join(", ")} <br>
+            <strong>Total com Modificador:</strong> ${totalComMod} <br>
+            <strong>Total sem Modificador:</strong> ${somaDices} <br>
+            <strong>Maior com Modificador:</strong> ${maiorComMod} <br>
+            <strong>Maior valor:</strong> ${maior} | <strong>Menor valor:</strong> ${menor}`;
+
+    }else{
+        mensagem = `
+            <strong>Dados rolados:</strong> ${dice.join(", ")} <br>
+            <strong>Total com Modificador:</strong> ${totalComMod} <br>`
+    }
 
     const display = document.getElementById('output');
     display.innerHTML = mensagem;

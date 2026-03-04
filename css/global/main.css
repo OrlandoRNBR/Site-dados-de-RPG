@@ -4,10 +4,10 @@
     font-family: var(--default-font);
     color: var(--default-font-color);
     /*background-color: var(--default-background-color);*/
-    background: radial-gradient(circle, #fdf5e6 30%, #f2e8c9 100%); /*Cira um gradiente em formato de circulo ficando mais 
+    background: radial-gradient(circle, var(--main-gradient1) 30%, var(--main-gradient2) 100%);/*Cira um gradiente em formato de circulo ficando mais 
     claro de dentro para fora*/
     box-shadow: inset 0 0 60px rgba (0, 0, 0, 0.1); /*Define uma sombra interna em toda a caixa*/
-    border: 2px solid #d3b48c; /*cria uma linha em volta da caixa*/
+    border: 2px solid var(--main-border); /*cria uma linha em volta da caixa*/
 }
 
 .mainContent h1{

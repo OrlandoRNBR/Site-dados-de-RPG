@@ -1,0 +1,174 @@
+/* Isso força todos os elementos a usarem a sua fonte */
+
+.pageHeader{
+    text-align: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.pageHeader p{
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+
+ .mainContent h2{
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+ }
+
+label {
+    font-family: var(--default-font); /* Usa sua variável */
+    font-size: 1.1rem;               /* Um pouco maior que o padrão */
+    font-weight: bold;               /* Deixa em negrito */
+    color: var(--font-color);        /* Usa sua cor de fonte */
+    margin-right: 5px;               /* Dá um respiro entre o nome e o input */
+}
+
+.help-icon {
+    display: none;
+}
+
+.gameArea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    }
+
+.resultBox{
+        display: flex;
+        flex: 1;
+        max-width: 300px;
+        border: 2px solid var(--main-border); /*cria uma linha em volta da caixa*/
+        background: radial-gradient(circle, var(--main-gradient1) 30%, var(--main-gradient2) 100%);
+        height: auto;
+        min-height: 200px;
+        padding: 20px;
+        gap: 30px;
+    }
+
+.diceBox{
+    font-family: var(--default-font);
+    color: var(--font-color);
+}
+
+.diceBox input{
+    width: 60px;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid var(--main-border);
+    border-radius: 4px 10px;
+    transition: 0.3s;
+    color: var(--font-color);
+}
+
+.diceBox input:hover{
+    background-color: var(--main-border);
+    color: white;
+}
+
+.diceBox button{
+    cursor: pointer;
+    background-color: var(--dice-button-color);
+    border: 1px solid var(--main-border);
+    border-radius: 10px 4px;
+    color: var(--main-button-text-color);   
+    font-size: var(--main-button-font-size);
+    padding: 3px;
+    line-height: 1;
+}
+
+.diceBox button:hover{
+    background-color: var(--main-border);
+    color: white;
+}
+
+input[type="checkbox"] {
+    /* Muda a cor de fundo quando marcado para combinar com seu tema */
+    accent-color: var(--main-border); 
+    
+    /* Aumenta um pouco o tamanho dele */
+    width: 18px;
+    height: 18px;
+    
+    /* Alinha verticalmente com o texto do label */
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    filter: brightness(1.2);
+}
+
+@media(min-width: 768px) {
+ 
+    .gameArea{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .columnsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .diceBox{
+        text-align: left;
+        flex: 1;
+        width: min-content;  
+        max-width: 500px;
+        border: 2px solid var(--main-border); /*cria uma linha em volta da caixa*/
+        background: radial-gradient(circle, var(--main-gradient1) 30%, var(--main-gradient2) 100%);
+        height: auto;               /* Deixa o conteúdo respirar */
+        min-height: 500px;
+        padding: 40px 0px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 5px;
+
+    } 
+    
+    
+
+    .diceRow {
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+    .diceConteiner{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .pageHeader p{
+        text-align: left;
+    }
+
+    .help-icon {
+        display: inline-block;
+        cursor: help;
+        margin-left: 5px;
+    }   
+}
