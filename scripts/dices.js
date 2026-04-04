@@ -55,10 +55,10 @@ function rolarIndividual(faces){
     }else{ //se não sera essa
         mensagem = `
             <strong>Dados rolados:</strong> ${dice.join(", ")} <br>
-            <strong>Total com Modificador:</strong> ${totalComMod} <br>`
+            <strong>Total com Modificador:</strong> ${totalComMod} <br>`;
     }
 
-    const display = document.getElementById('utput'); // pega o "endereço" de um id e armazena na variavel display
+    const display = document.getElementById('output'); // pega o "endereço" de um id e armazena na variavel display
     display.innerHTML = mensagem; // mostra no display a mensagem.
-    return mensagem;
+  //  return mensagem;
 }
